@@ -1,6 +1,10 @@
 .lista{
     background-color:rgb(91, 44, 111);
-    width: 30px;
+    width: 300px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+
 }
 .V1{
     color:rgb(0, 100, 0);
