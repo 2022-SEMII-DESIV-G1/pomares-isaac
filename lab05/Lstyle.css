@@ -1,0 +1,27 @@
+.lista{
+    background-color:rgb(91, 44, 111);
+    width: 300px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+    border: 3px solid black;
+}
+.V1{
+    color:rgb(176, 196, 222);
+    font-size: 20px;
+}
+.V2{
+    color:rgb(173, 216, 230);
+    font-size: 20px;
+}
+.V3{
+    color:rgb(135, 206, 235);
+    font-size: 20px;
+}
+.V4{
+    color:rgb(0, 191, 255);
+    font-size: 20px;
+}
+.V5{
+    color:rgb(30, 144, 255);
+    font-size: 20px;
+}
