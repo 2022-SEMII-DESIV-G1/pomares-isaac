@@ -20,5 +20,4 @@ function cuenta(texto) {
     document.getElementById(texto).value = "";
     document.getElementById("resultado").innerHTML = "";
   }
-   44  
-  laboratorio8/index.html
+  
