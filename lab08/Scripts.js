@@ -4,7 +4,7 @@ function cuenta(texto) {
     var contador = {};
     cadena.forEach(function (valor) {
       if (contador[valor] === undefined) {
-        contador[valor] = 1;
+        contador[valor] == 1;
       } else {
         contador[valor] += 1;
       }
