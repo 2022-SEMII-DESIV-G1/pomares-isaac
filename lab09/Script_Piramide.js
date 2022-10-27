@@ -22,15 +22,15 @@ function calcular(array, i, j) {
   if (i == array.length) {
     return 0;
   }
-  let sum;
-  sum =
+  let suma;
+  suma =
     array[i][j] + Math.max(calcular(array, i + 1, j), calcular(array, i + 1, j + 1));
-  return sum;
+  return suma;
 }
 
 
 //   Llamada a la funcion calcular
-export function Sumtot(array) {
+export function Sumatot(array) {
   return calcular(array, 0, 0);
 }
 
@@ -48,6 +48,10 @@ array.forEach((rows) => {
     divParent.appendChild(childDiv);
   });
 });
+const textSum = document.getElementById("suma");
+textSum.innerHTML = "La suma de la ruta mayor es de: " + Sumatot(array);
+
+
 /*
 function crear_piramide(num_lineas) {
     console.log(num_lineas)
