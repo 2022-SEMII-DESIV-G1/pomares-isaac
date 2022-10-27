@@ -34,15 +34,15 @@ export function Sumtot(array) {
   return calcular(array, 0, 0);
 }
 
-let cont = 0;
+let contador = 0;
 const div = document.getElementById("piramyd");
 array.forEach((rows) => {
-  cont++;
+  contador++;
   const parentDiv = document.createElement("div");
-  parentDiv.id = "parent" + cont;
+  parentDiv.id = "parent" + contador;
   div.appendChild(parentDiv);
   rows.forEach((column) => {
-    const divParent = document.getElementById("parent" + cont);
+    const divParent = document.getElementById("parent" + contador);
     const childDiv = document.createElement("div");
     childDiv.textContent = column;
     divParent.appendChild(childDiv);
