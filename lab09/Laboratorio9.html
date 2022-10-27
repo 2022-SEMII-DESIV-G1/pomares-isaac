@@ -11,14 +11,14 @@
   <body id="background">
      <div id="box">
         <h2 class="title"> Recorrido mas alto de Piramide</h2>
-        <h3 class="instruction"> colocar numeros</h3>
-		<input type="text" id="texto" size="50" name="texto" value=""/>
+       
+		
         <input
           type="button"
           id="boton"
           name="boton"
           value="Calcular"
-          onclick="crear_piramide(this.value)"
+          onclick="calcular()"
         />
         <input
           type="button"
@@ -29,13 +29,6 @@
           hidden="true"
         />
 	   
-	   
-		<input 
-			id="num_lineas" 
-			placeholder="Tamaño Piramide" 
-			onkeyup ="crear_piramide(this.value)"
-		/>
-		<pre id="piramide"></pre>
         
 		<script>
           $(function(){
