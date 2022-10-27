@@ -28,6 +28,27 @@ function calcular(array, i, j) {
   return sum;
 }
 
+
+//   Llamada a la funcion calcular
+export function Sumtot(array) {
+  return calcular(array, 0, 0);
+}
+
+let cont = 0;
+const div = document.getElementById("piramyd");
+array.forEach((rows) => {
+  cont++;
+  const parentDiv = document.createElement("div");
+  parentDiv.id = "parent" + cont;
+  div.appendChild(parentDiv);
+  rows.forEach((column) => {
+    const divParent = document.getElementById("parent" + cont);
+    const childDiv = document.createElement("div");
+    childDiv.textContent = column;
+    divParent.appendChild(childDiv);
+  });
+});
+/*
 function crear_piramide(num_lineas) {
     console.log(num_lineas)
     num_lineas = parseInt(num_lineas)
@@ -70,3 +91,4 @@ function crear_piramide(num_lineas) {
        }
        return piramide
   }
+  */
