@@ -1,5 +1,5 @@
 // array
-export let array = [
+let array = [
   [75],
   [95, 64],
   [17, 47, 82],
@@ -30,7 +30,7 @@ function calcular(array, i, j) {
 
 
 //   Llamada a la funcion calcular
-export function Sumatot(array) {
+function Sumatot(array) {
   return calcular(array, 0, 0);
 }
 
@@ -51,48 +51,3 @@ array.forEach((rows) => {
 const textSum = document.getElementById("suma");
 textSum.innerHTML = "La suma de la ruta mayor es de: " + Sumatot(array);
 
-
-/*
-function crear_piramide(num_lineas) {
-    console.log(num_lineas)
-    num_lineas = parseInt(num_lineas)
-    var piramide = ""
-    piramide = piramideUp(num_lineas+1,0)
-    piramide += piramideDown(num_lineas,0,1)
-    document.getElementById('piramide').innerText = piramide
-  }
-  
-  function piramideUp(num_lineas, inicio){
-    let piramide= "" // el string
-  
-    for( let i = inicio; i <= num_lineas ; i++){
-       //piramide += agregarEspacios(num_lineas,0,i) 
-       piramide += agregarNumeros(i-1)
-    }
-    return piramide
-  }
-  
-  function piramideDown(num_lineas, fin, suma){
-    let piramide= "" // el string
-  
-    for( let i = num_lineas; i > fin ; i--){
-       //piramide += agregarEspacios(num_lineas,suma,i) 
-       piramide += agregarNumeros(i-1)
-    }
-    return piramide
-  }
-  
-  function agregarNumeros(index){
-       let piramide = (index + " ").repeat(index+1)
-       return piramide += "\n" // fin de la linea
-  
-  }
-  
-  function agregarEspacios(num_lineas,suma, index){
-       let piramide = ""
-       for( let j = 0; j < (num_lineas+suma) - index; j++){
-         piramide += " "  // espacio en blanco antes de cada linea
-       }
-       return piramide
-  }
-  */
