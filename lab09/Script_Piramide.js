@@ -1,4 +1,5 @@
-// array
+//arreglo
+
 let array = [
   [75],
   [95, 64],
@@ -21,16 +22,14 @@ let array = [
 function calcular(array, i, j) {
   if (i == array.length) {
     return 0;
-  }
+ }
   let suma;
-  suma =
-    array[i][j] + Math.max(calcular(array, i + 1, j), calcular(array, i + 1, j + 1));
+  suma = array[i][j] + Math.max(calcular(array, i + 1, j), calcular(array, i + 1, j + 1));
   return suma;
 }
 
-
 //   Llamada a la funcion calcular
-function Sumatot(array) {
+ function Sumatot(array) {
   return calcular(array, 0, 0);
 }
 
@@ -50,4 +49,3 @@ array.forEach((rows) => {
 });
 const textSum = document.getElementById("suma");
 textSum.innerHTML = "La suma de la ruta mayor es de: " + Sumatot(array);
-
