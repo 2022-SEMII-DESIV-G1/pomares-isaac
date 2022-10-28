@@ -19,7 +19,7 @@ let array = [
 ];
 
 // calcular la suma mayor en el recorrrido
-function calcular(array, i = 0, j) {
+function calcular(array, i = 0, j = 0) {
   if (i == array.length) {
     return 0;
  }
