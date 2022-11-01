@@ -50,8 +50,8 @@ function calcular(array, i, j) {
 	for (i=0;i<array.length;i++) {
        for (j=0;j<1;j++) {
       // Acceder al elemento
-	  document.write( "El valor de la posición [" + i + "] es [" + array[i][j+1] + "]<br/>" );
-	  contador2 = contador2 + array[i][j+1];
+	  document.write( "El valor de la posición [" + i + "] es [" + array[i][j] + "]<br/>" );
+	  contador2 = contador2 + array[i][j];
        }
     }
 	document.write( "<b>La suma del primer recorrrido es [" + contador2 + "]</b><br/>" );
