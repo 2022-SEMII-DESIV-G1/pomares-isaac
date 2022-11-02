@@ -74,7 +74,7 @@ for (x=0;x<array.length;x++) {
 
                   contador1 = contador1 + array[x][y];
 
-      anterior = contador1 - array[x][y];
+                  anterior = contador1 - array[x][y];
 
                  
 
