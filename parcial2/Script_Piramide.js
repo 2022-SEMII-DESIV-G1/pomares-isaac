@@ -103,8 +103,8 @@ function calcular(Arreglo , i, j ) {
 
 for (let i=0;i<Arreglo.length;i++) {
 
-  document.write( "El valor de la posición i [" + i + "," + j + "] es [" + Arreglo[i][j] + "]<br/>" );
-  contador1 = contador1 + (i++, j++); 
+  document.write( "El valor de la posición i [" + i + "," + j + "] es [" + Arreglo.length + "]<br/>" );
+  contador1 = contador1 + (i, j); 
   document.write( "El valor de la posición opuesta i [" + i + "," + i + "] es [" + Arreglo[i][i] + "]<br/>" );    
   contador3 = contador3 + Arreglo[i][i];
   
