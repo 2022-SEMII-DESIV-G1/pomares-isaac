@@ -67,7 +67,8 @@ document.write( "<b>La suma del primer recorrrido es [" + Sumatot(Arreglo) + "]<
 
 // calcular el arreglo en el recorrrido
 
-function calcular(Arreglo , i, j ) {
+function calcular (Arreglo , i, j )
+{ 
     if (i == Arreglo.length) {
     return 0;
     }
@@ -75,6 +76,7 @@ function calcular(Arreglo , i, j ) {
     if (j == Arreglo.length) {
     return 0;
     }
+  
 
     var contador1, x, y, i, j, Mayor, contador2, contador3;
 
@@ -84,7 +86,7 @@ function calcular(Arreglo , i, j ) {
 
     contador3 = 0;
 
-  }
+  
 
 
 /*En esta bloque se realiza el primer recorrido y se realiza el calculo*/
@@ -115,7 +117,9 @@ document.write( "<b>La suma mayor es [" + Mayor + "]</b><br/>" );
 
 }
 
-                    
+}
+
+
 
                    
 
