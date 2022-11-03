@@ -34,8 +34,11 @@ let Arreglo = [
 
 ]
 //   Llamada a la funcion calcular
+
 function Sumatot(Arreglo) {
+
   return calcular(Arreglo, 0, 0);
+
 }
 
 let contador = 0;
@@ -63,10 +66,14 @@ Arreglo.forEach((rows) => {
     divParent.appendChild(childDiv);
 
   });
-  const textSum = document.getElementById("suma");
-  textSum.innerHTML = "La suma de la ruta mayor es de: " + Sumatot(Arreglo);
-  document.write( "<b>La suma ruta recorrrido es [" + Sumatot(Arreglo) + "]</b><br/>" );
+
 });
+
+const textSum = document.getElementById("suma");
+textSum.innerHTML = "La suma de la ruta mayor es de: " + Sumatot(Arreglo);
+document.write( "<b>La suma del primer recorrrido es [" + Sumatot(Arreglo) + "]</b><br/>" );
+
+ 
 
 
                 // calcular el arreglo en el recorrrido
