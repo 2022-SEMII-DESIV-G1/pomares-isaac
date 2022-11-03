@@ -106,7 +106,7 @@ for (let i=0;i<Arreglo.length;i++) {
   document.write( "El valor de la posición i [" + i + "," + j + "] es [" + Arreglo[i][j] + "]<br/>" );
   contador1 = contador1 + Arreglo[i][j]; 
   document.write( "El valor de la posición opuesta i [" + j + "," + i + "] es [" + Arreglo[i][j] + "]<br/>" );    
-  contador3 = contador3 + Arreglo[j][i];
+  contador3 = contador3 + Arreglo[i][i];
   
         for (let j=0;j<1;j++) {
         // Acceder al elemento      
