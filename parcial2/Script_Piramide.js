@@ -72,19 +72,12 @@ Arreglo.forEach((rows) => {
                 // calcular el arreglo en el recorrrido
 
                 function calcular(Arreglo , i, j ) {
-
-                              
-
                   if (i == Arreglo.length) {
-
-                               return 0;
-
+                               return (Arreglo, 0, 0);
                   }
 
                   if (j == Arreglo.length) {
-
-                               return 0;
-
+                    return (Arreglo, 0, 0);
                   }
 
                   var contador1, x, y, i, j, contador2, contador3;
