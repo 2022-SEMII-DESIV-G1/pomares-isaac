@@ -34,11 +34,11 @@ let Arreglo = [
 
 ]
 //   Llamada a la funcion calcular
-function Sumatot(Arreglo) {
+/*function Sumatot(Arreglo) {
   return calcular(Arreglo, 0, 0);
-}
+}*/
 
-/*let contador = 0;
+let contador = 0;
 
 const div = document.getElementById("piramyd");
 
@@ -66,7 +66,7 @@ Arreglo.forEach((rows) => {
 
 });
 
-const textSum = document.getElementById("suma");
+/*const textSum = document.getElementById("suma");
 
 textSum.innerHTML = "La suma de la ruta mayor es de: " + Sumatot(Arreglo);
 
