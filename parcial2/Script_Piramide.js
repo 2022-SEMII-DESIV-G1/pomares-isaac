@@ -97,17 +97,18 @@ document.write( "El valor de la posición i [" + i + "," + j + "] es [" + Arregl
   contador1 = contador1 + Arreglo[i][j]; 
   
         for (let j=0;j<1;j++) {
-          if (Arreglo.values[i][j]  > Arreglo.values[i+ 1][j+ 1] ){
-            
-            Mayor = Mayor + Arreglo[i][j]; 
-
-          }
+          
         
           // Acceder al elemento  
         document.write( "El valor de la posición opuesta i [" + i + "," + j + "] es [" + Arreglo[i][j+ 1] + "]<br/>" );    
   contador3 = contador3 + Arreglo[i][j+ 1];
         
       } 
+      if (Arreglo.values[i][j]  > Arreglo.values[i+ 1][j+ 1] )
+      {
+        Mayor = Mayor + Arreglo[i][j]; 
+      }
+
 }
 document.write( "<b>La suma del primer recorrido es [" + contador1 + "]</b><br/>" );
 document.write( "<b>La suma segundo recorrido es [" + contador3 + "]</b><br/>" );
