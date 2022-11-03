@@ -1,6 +1,6 @@
 // array
 
-let array = [
+let Arreglo = [
 
   [75],
 
@@ -36,89 +36,149 @@ let array = [
 
  
 
-// calcular el arreglo en el recorrrido
-
-function calcular(array, i, j) {
-
-               
-
-  if (i == array.length) {
-
-    return 0;
-
-  }
+ 
 
  
 
-  var contador1, x, y, i, j, contador2;
+//   Llamada a la funcion calcular
 
-  contador1 = 0; anterior = 0;
+function Sumatot(Arreglo) {
 
-  contador2 = 0; adyacente = 0;
+  return calcular(Arreglo, 0, 0);
+
+}
+
+let contador = 0;
+
+const div = document.getElementById("piramyd");
+
+Arreglo.forEach((rows) => {
+
+  contador++;
+
+  const parentDiv = document.createElement("div");
+
+  parentDiv.id = "parent" + contador;
+
+  div.appendChild(parentDiv);
+
+  rows.forEach((column) => {
+
+    const divParent = document.getElementById("parent" + contador);
+
+    const childDiv = document.createElement("div");
+
+    childDiv.textContent = column;
+
+    divParent.appendChild(childDiv);
+
+  });
+
+});
+
+const textSum = document.getElementById("suma");
+
+textSum.innerHTML = "La suma de la ruta mayor es de: " + Sumatot(Arreglo);
 
  
 
-/*En esta bloque se realiza el primer recorrido y se realiza el calculo*/
+document.write( "<b>La suma del primer recorrrido es [" + Sumatot(Arreglo) + "]</b><br/>" );
 
  
 
-for (x=0;x<array.length;x++) {
+ 
 
-    for (y=0;y<1;y++) {
+ 
 
-      // Acceder al elemento
+                // calcular el arreglo en el recorrrido
 
-               
-
-                  document.write( "El valor de la posición [" + x + "," + y + "] es [" + array[x][y] + "]<br/>" );
-
-                  contador1 = contador1 + array[x][y];
-
-                  anterior = contador1 - array[x][y];
-
-                 
-
-                  
-
-                //  adyacente = array[x][x];
-
-                   }
-
-                  
-
-   document.write( "<b>La suma del primer recorrrido es [" + contador1 + "]</b><br/>" );
-
-   document.write( "<b>La suma del anterior es [" + anterior + "]</b><br/>" );
-
-   //document.write( "<b>La suma del adyacente es [" + adyacente + "]</b><br/>" );
-
-   }
+                function calcular(Arreglo , i, j ) {
 
                               
 
-               
+                  if (i == Arreglo.length) {
 
-               
+                               return 0;
 
-               
+                  }
+
+                  if (j == Arreglo.length) {
+
+                               return 0;
+
+                  }
+
+                  var contador1, x, y, i, j, contador2, contador3;
+
+                  contador1 = 0; anterior = 0;
+
+                  contador2 = 0; adyacente = 0;
+
+                  contador3 = 0;
 
  
 
+                /*En esta bloque se realiza el primer recorrido y se realiza el calculo*/
+
+ 
+
+                for (i=0;i<Arreglo.length;i++) {
+
+                              
+
+                               document.write( "El valor de la posición i [" + i + "," + j + "] es [" + Arreglo[i][j] + "]<br/>" );
+
+                                                                 contador1 = contador1 + Arreglo[i][j];
+
+                               for (j=0;j<1;j++) {
+
+                                 // Acceder al elemento
+
+                                              
+
+                                 document.write( "El valor de la posición opuesta i [" + i + "," + i + "] es [" + Arreglo[i][i] + "]<br/>" );    
+
+ 
+
+                                 contador3 = contador3 + Arreglo[i][i];
+
+                                
+
+                               }
+
+                                                                                                                                                              
+
+                }
+
+               
+
+                document.write( "<b>La suma del primer recorrido es [" + contador1 + "]</b><br/>" );
+
+                document.write( "<b>La suma segundo recorrido es [" + contador3 + "]</b><br/>" );
+
                
 
                
 
-               
+}
 
-// document.write( "___________________________________________________<br/>" );
+  
 
-// document.write( "___________________________________________________<br/>" );
+                    
 
-                // // document.write( "___________________________________________________<br/>" );
+                   
 
-                // // document.write( "___________________________________________________<br/>" );
+ 
 
-                // /*En esta bloque se realiza el segundo recorrido y se realiza el calculo*/
+ 
+
+ 
+
+ 
+
+ 
+
+//
 
                 // for (i=0;i<array.length;i++) {
 
@@ -135,6 +195,32 @@ for (x=0;x<array.length;x++) {
     // }
 
                 // document.write( "<b>La suma del segundo recorrrido es [" + contador2 + "]</b><br/>" );
+
+//document.write( "<b>La suma del anterior es [" + anterior + "]</b><br/>" );
+
+                  
+
+                   // anterior = contador1 - array[x][y];
+
+                               //document.write( "<b>La suma del adyacente es [" + adyacente + "]</b><br/>" ); 
+
+                               //  adyacente = array[x][x];
+
+               
+
+ 
+
+ 
+
+// document.write( "___________________________________________________<br/>" );
+
+// document.write( "___________________________________________________<br/>" );
+
+                // // document.write( "___________________________________________________<br/>" );
+
+                // // document.write( "___________________________________________________<br/>" );
+
+               
 
                
 
@@ -175,53 +261,3 @@ for (x=0;x<array.length;x++) {
                 // document.write( "El valor de la posición [" + 2 + "] es [" + array[2][2] + "]<br/>" ); */
 
                
-
-               
-
-}
-
- 
-
- 
-
-//   Llamada a la funcion calcular
-
-function Sumatot(array) {
-
-  return calcular(array, 0, 0);
-
-}
-
- 
-
-let contador = 0;
-
-const div = document.getElementById("piramyd");
-
-array.forEach((rows) => {
-
-  contador++;
-
-  const parentDiv = document.createElement("div");
-
-  parentDiv.id = "parent" + contador;
-
-  div.appendChild(parentDiv);
-
-  rows.forEach((column) => {
-
-    const divParent = document.getElementById("parent" + contador);
-
-    const childDiv = document.createElement("div");
-
-    childDiv.textContent = column;
-
-    divParent.appendChild(childDiv);
-
-  });
-
-});
-
-const textSum = document.getElementById("suma");
-
-textSum.innerHTML = "La suma de la ruta mayor es de: " + Sumatot(array);
