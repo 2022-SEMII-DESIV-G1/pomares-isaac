@@ -73,11 +73,11 @@ Arreglo.forEach((rows) => {
 
                 function calcular(Arreglo , i, j ) {
                   if (i == Arreglo.length) {
-                               return (0);
+                               return 0;
                   }
 
                   if (j == Arreglo.length) {
-                    return (0);
+                    return 0;
                   }
 
                   var contador1, x, y, i, j, contador2, contador3;
