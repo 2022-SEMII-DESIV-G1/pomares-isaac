@@ -34,9 +34,9 @@ let Arreglo = [
 
 ]
 //   Llamada a la funcion calcular
-/*function Sumatot(Arreglo) {
+function Sumatot(Arreglo) {
   return calcular(Arreglo, 0, 0);
-}*/
+}
 
 let contador = 0;
 
