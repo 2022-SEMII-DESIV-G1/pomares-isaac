@@ -94,13 +94,13 @@ function calcular (Arreglo , i, j )
 
 
 for (let i=0;i<Arreglo.length;i++) { 
-document.write( "El valor de la posición i [" + i + "," + j + "] es [" + Arreglo[i+1][j] + "]<br/>" );
-  contador1 = contador1 + Arreglo[i+1][j]; 
+document.write( "El valor de la posición i [" + i + "," + j + "] es [" + Arreglo[i] + "]<br/>" );
+  contador1 = contador1 + Arreglo[i]; 
   
         for (let j=0;j<1;j++) {
           // Acceder al elemento  
-        document.write( "El valor de la posición opuesta i [" + i + "," + j + "] es [" + Arreglo[i][j+1] + "]<br/>" );    
-        contador3 = contador3 + Arreglo[i][j+1];
+        document.write( "El valor de la posición opuesta i [" + i + "," + j + "] es [" + Arreglo[j+1] + "]<br/>" );    
+        contador3 = contador3 + Arreglo[j+1];
       
         document.write( "<b>La suma del primer recorrido es [" + contador1 + "]</b><br/>" );
         document.write( "<b>La suma segundo recorrido es [" + contador3 + "]</b><br/>" );
