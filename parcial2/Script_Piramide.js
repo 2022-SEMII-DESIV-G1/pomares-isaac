@@ -41,18 +41,19 @@ function Sumatot(Arreglo) {
 
 let contador = 0;
 const div = document.getElementById("piramide");
+
 Arreglo.forEach((rows) => {
   contador++;
   const parentDiv = document.createElement("div");
   parentDiv.id = "parent" + contador;
   div.appendChild(parentDiv);
-  rows.forEach((column) => {
-    const divParent = document.getElementById("parent" + contador);
-    const childDiv = document.createElement("div");
+      rows.forEach((column) => {
+        const divParent = document.getElementById("parent" + contador);
+        const childDiv = document.createElement("div");
 
-    childDiv.textContent = column;
+        childDiv.textContent = column;
 
-    divParent.appendChild(childDiv);
+        divParent.appendChild(childDiv);
 
   });
 
@@ -94,8 +95,8 @@ function calcular (Arreglo , i, j )
 
 
 for (let i=0;i<Arreglo.length;i++) { 
-document.write( "El valor de la posición i [" + i + "," + j + "] es [" + Arreglo.column + "]<br/>" );
-  contador1 = contador1 + Arreglo.column; 
+document.write( "El valor de la posición i [" + i + "," + j + "] es [" + Arreglo.column[i]  + "]<br/>" );
+  contador1 = contador1 + Arreglo.column[i]; 
   
         for (let j=0;j<1;j++) {
           // Acceder al elemento  
