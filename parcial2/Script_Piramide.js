@@ -101,34 +101,13 @@ document.write( "El valor de la posición i [" + i + "," + j + "] es [" + Arregl
           
         
           // Acceder al elemento  
-        document.write( "El valor de la posición opuesta i [" + i + "," + j + "] es [" + Arreglo[i][j+1] + "]<br/>" );    
-  contador3 = contador3 + Arreglo[i][j+1];
-  if (Arreglo.values[i][j] > Arreglo.values[i++][j++]) 
-    Mayor = Mayor + Arreglo[i][j]; 
-  }
+        document.write( "El valor de la posición opuesta i [" + i + "," + j + "] es [" + Arreglo[i][j++] + "]<br/>" );    
+  contador3 = contador3 + Arreglo[i][j++];
+  
       
-      
-
-
 document.write( "<b>La suma del primer recorrido es [" + contador1 + "]</b><br/>" );
 document.write( "<b>La suma segundo recorrido es [" + contador3 + "]</b><br/>" );
+
+
 document.write( "<b>La suma mayor es [" + Mayor + "]</b><br/>" );
-
-
 }
-
-}
-
-
-
-                   
-
- 
-
- 
-
- 
-
- 
-
-               
