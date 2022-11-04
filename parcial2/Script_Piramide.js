@@ -94,8 +94,8 @@ function calcular (Arreglo , i, j )
 
 
 for (let i=0;i<Arreglo.length;i++) { 
-document.write( "El valor de la posición i [" + i + "," + j + "] es [" + Arreglo.length + "]<br/>" );
-  contador1 = contador1 + Arreglo[i++] + Arreglo.length; 
+document.write( "El valor de la posición i [" + i + "," + j + "] es [" + Arreglo.column + "]<br/>" );
+  contador1 = contador1 + Arreglo.column; 
   
         for (let j=0;j<1;j++) {
           // Acceder al elemento  
