@@ -40,7 +40,7 @@ function Sumatot(Arreglo) {
 }
 
 let contador = 0;
-const div = document.getElementById("piramyd");
+const div = document.getElementById("piramide");
 Arreglo.forEach((rows) => {
   contador++;
   const parentDiv = document.createElement("div");
