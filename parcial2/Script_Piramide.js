@@ -36,7 +36,7 @@ let Arreglo = [
 //   Llamada a la funcion calcular
 
 function Sumatot(Arreglo) {
-  return calcular(Arreglo, 0, 0);
+  return calcular(Arreglo, i, j);
 }
 
 let contador = 0;
@@ -95,8 +95,8 @@ function calcular (Arreglo , i, j )
 
 
 for (let i=0;i<Arreglo.length;i++) { 
-document.write( "El valor de la posición i [" + i + "," + j + "] es [" + Arreglo [i][j]+ "]<br/>" );
-  contador1 = contador1 + [i]; 
+document.write ( "El valor de la posición i [" + i + "," + j + "] es [" + Arreglo [i] + "]<br/>" );
+  contador1 = contador1 + Arreglo[i]; 
   
         for (let j=0;j<1;j++) {
           // Acceder al elemento  
@@ -105,7 +105,7 @@ document.write( "El valor de la posición i [" + i + "," + j + "] es [" + Arregl
       
         document.write( "<b>La suma del primer recorrido es [" + contador1 + "]</b><br/>" );
         document.write( "<b>La suma segundo recorrido es [" + contador3 + "]</b><br/>" );
-        document.write( "<b>La suma mayor es [" + Mayor + "]</b><br/>" );
+
         }
       }
     }
