@@ -71,11 +71,11 @@ document.write( "<b>La suma del primer recorrrido es [" + Sumatot(Arreglo) + "]<
 function calcular (Arreglo , i, j )
 { 
     if (i == Arreglo.length) {
-    return 0;
+    return Arreglo[i];
     }
 
     if (j == Arreglo.length) {
-    return 0;
+      return Arreglo[j];
     }
   
 
