@@ -56,12 +56,12 @@ Arreglo.forEach((rows) => {
         divParent.appendChild(childDiv);
 
   });
-
+  const textSum = document.getElementById("suma");
+  textSum.innerHTML = "La suma de la ruta mayor es de: " + Sumatot(Arreglo);
+  document.write( "<b>La suma del primer recorrrido es [" + Sumatot(Arreglo) + "]</b><br/>" );
 });
 
-const textSum = document.getElementById("suma");
-textSum.innerHTML = "La suma de la ruta mayor es de: " + Sumatot(Arreglo);
-document.write( "<b>La suma del primer recorrrido es [" + Sumatot(Arreglo) + "]</b><br/>" );
+
 
  
 
@@ -93,7 +93,7 @@ function calcular (Arreglo , i, j )
 /*En esta bloque se realiza el primer recorrido y se realiza el calculo*/
 
 
-
+for (x=0;)
 for (let i=0;i<Arreglo.length;i=i++) { 
   document.write ( "El valor de la posición i [" + i + "," + j + "] es [" + Arreglo[i][j]+ "]<br/>" );
   contador1 = contador1 + Arreglo[i][j];
