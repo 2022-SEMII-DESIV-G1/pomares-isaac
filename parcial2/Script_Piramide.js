@@ -70,13 +70,7 @@ document.write( "<b>La suma del primer recorrrido es [" + Sumatot(Arreglo) + "]<
 
 function calcular (Arreglo , i, j )
 { 
-    if (i == Arreglo.length) {
-    return 0;
-    }
-
-    if (j == Arreglo.length) {
-      return 0;
-    }
+    
   
 
     var contador1, x, y, i, j, Mayor, contador2, contador3;
@@ -95,6 +89,13 @@ function calcular (Arreglo , i, j )
 
 
 for (let i=0;i<Arreglo.length;i++) { 
+  if (i == Arreglo.length) {
+    return 0;
+    }
+
+    if (j == Arreglo.length) {
+      return 0;
+    }
 document.write ( "El valor de la posición i [" + i + "," + j + "] es [" + Arreglo [i++][j]+ "]<br/>" );
   contador1 = contador1 + Arreglo[i][j]; 
   
