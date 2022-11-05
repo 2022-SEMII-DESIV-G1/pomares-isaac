@@ -82,20 +82,20 @@ function calcular (Arreglo , i, j )
     contador3 = 0;
 
   
-
+    if (i == Arreglo.length) {
+      return 0;
+      }
+  
+      if (j == Arreglo.length) {
+        return 0;
+      }
 
 /*En esta bloque se realiza el primer recorrido y se realiza el calculo*/
 
 
 
 for (let i=0;i<Arreglo.length;i++) { 
-  if (i == Arreglo.length) {
-    return 0;
-    }
-
-    if (j == Arreglo.length) {
-      return 0;
-    }
+  
   
         for (let j=0;j<1;j++) {
           // Acceder al elemento  
