@@ -96,13 +96,13 @@ for (let i=0;i<Arreglo.length;i++) {
     if (j == Arreglo.length) {
       return 0;
     }
-document.write ( "El valor de la posición i [" + i + "," + j + "] es [" + Arreglo [i++][j]+ "]<br/>" );
+document.write ( "El valor de la posición i [" + i + "," + j + "] es [" + Arreglo [i+ 1][j]+ "]<br/>" );
   contador1 = contador1 + Arreglo[i][j]; 
   
         for (let j=0;j<1;j++) {
           // Acceder al elemento  
-        document.write( "El valor de la posición opuesta i [" + i + "," + j + "] es [" + Arreglo[j++] + "]<br/>" );    
-        contador3 = contador3 + Arreglo[j++];
+        document.write( "El valor de la posición opuesta i [" + i + "," + j + "] es [" + Arreglo[j+ 1] + "]<br/>" );    
+        contador3 = contador3 + Arreglo[j];
       
         document.write( "<b>La suma del primer recorrido es [" + contador1 + "]</b><br/>" );
         document.write( "<b>La suma segundo recorrido es [" + contador3 + "]</b><br/>" );
