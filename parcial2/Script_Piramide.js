@@ -68,35 +68,31 @@ Arreglo.forEach((rows) => {
 
 // calcular el arreglo en el recorrrido
 
-function calcular (Arreglo , i, j )
-{ 
-    
+function calcular(Arreglo, i, j) {
+	
+  if (i == Arreglo.length) {
+    return 0;
+  }
   
+  var contador1, x, y, i, j, contador2;
+  contador1 = 0;
+  contador2 = 0;
 
-    var contador1, x, y, i, j, Mayor, contador2, contador3;
-    contador1 = 0; anterior = 0;
-    contador2 = 0; Mayor = 0;
-    contador3 = 0;
-
-  
-    if (i == Arreglo.length) {
-      return 0;
-      }
-  
-      
-
-/*En esta bloque se realiza el primer recorrido y se realiza el calculo*/
-
-for (i=0;i<Arreglo.lengt;i++) { 
-  
-        for (j=0;j<Arreglo[i].length;j++) {
-          document.write ( "El valor de la posición i [" + i + "," + j + "] es [" + Arreglo[i][j] + "]<br/>" );
-          contador1 = contador1 + Arreglo[i][j];
-        }
-      
-        document.write ( "<b>La suma del  recorrido es [" + contador1 + "]</b><br/>" );
-        contador1 = 0;
-
-      }
-      
+	
+	/*En esta bloque se realiza el primer recorrido y se realiza el calculo*/
+	
+	for (x=0;x<Arreglo.length;x++) {
+       for (y=0;y<Arreglo.length;y++) {
+      // Acceder al elemento
+	  
+	  document.write( "El valor de la posición [" + x + "] [" + y + "] es [" + Arreglo[x][y] + "]<br/>" );
+	  contador1 = contador1 + Arreglo[x][y];
+	  
+       }
+	   document.write( "<b>La suma del primer recorrrido es [" + contador1 + "]</b><br/>" );
+	   contador1 = 0;
     }
+	
+	
+	document.write( "<b>La suma del primer recorrrido es [" + contador1 + "]</b><br/>" );
+}
