@@ -56,12 +56,12 @@ Arreglo.forEach((rows) => {
         divParent.appendChild(childDiv);
 
   });
-  const textSum = document.getElementById("suma");
-  textSum.innerHTML = "La suma de la ruta mayor es de: " + Sumatot(Arreglo);
-  document.write( "<b>La suma del primer recorrrido es [" + Sumatot(Arreglo) + "]</b><br/>" );
+  
 });
 
-
+const textSum = document.getElementById("suma");
+  textSum.innerHTML = "La suma de la ruta mayor es de: " + Sumatot(Arreglo);
+  document.write( "<b>La suma del primer recorrrido es [" + Sumatot(Arreglo) + "]</b><br/>" );
 
  
 
