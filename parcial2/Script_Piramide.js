@@ -87,9 +87,9 @@ function calcular (Arreglo , i, j )
 
 /*En esta bloque se realiza el primer recorrido y se realiza el calculo*/
 
-for (let i=0;i<Arreglo.lengt;i++) { 
+for (i=0;i<Arreglo.lengt;i++) { 
   
-        for (let j=0;j<Arreglo[i].length;j++) {
+        for (j=0;j<Arreglo[i].length;j++) {
           document.write ( "El valor de la posición i [" + i + "," + j + "] es [" + Arreglo[i][j] + "]<br/>" );
           contador1 = contador1 + Arreglo[i][j];
         }
