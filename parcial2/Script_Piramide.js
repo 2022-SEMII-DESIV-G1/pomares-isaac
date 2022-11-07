@@ -91,8 +91,6 @@ function calcular (Arreglo , i, j )
       }
 
 /*En esta bloque se realiza el primer recorrido y se realiza el calculo*/
-
-
 for (x=0;x==Arreglo.length;x--){
 for (let i=0;i<Arreglo.lengt;i++) { 
   document.write ( "El valor de la posición i [" + i + "," + j + "] es [" + Arreglo[i][j] + "]<br/>" );
