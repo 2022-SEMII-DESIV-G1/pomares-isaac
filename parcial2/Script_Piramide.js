@@ -74,11 +74,8 @@ function calcular (Arreglo , i, j )
   
 
     var contador1, x, y, i, j, Mayor, contador2, contador3;
-
     contador1 = 0; anterior = 0;
-
     contador2 = 0; Mayor = 0;
-
     contador3 = 0;
 
   
@@ -99,8 +96,8 @@ for (let i=0;i<Arreglo.lengt;i++) {
           contador3 = contador3 + Arreglo[j];*/
         }
       
-        document.write ( "<b>La suma del " + i +  " recorrido es [" + contador1 + "]</b><br/>" );
-      document.write ( "<b>La suma segundo recorrido es [" + contador3 + "]</b><br/>" );
+        document.write ( "<b>La suma del  recorrido es [" + contador1 + "]</b><br/>" );
+        contador1 = 0;
 
       }
       
