@@ -86,9 +86,7 @@ function calcular (Arreglo , i, j )
       return 0;
       }
   
-      if (j == Arreglo.length) {
-        return 0;
-      }
+      
 
 /*En esta bloque se realiza el primer recorrido y se realiza el calculo*/
 
