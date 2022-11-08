@@ -100,12 +100,7 @@ document.write( "<b>La suma del primer recorrrido es [" + Sumatot(Arreglo) + "]<
 
                   contador3 = 0;
 
- 
-
                 /*En esta bloque se realiza el primer recorrido y se realiza el calculo*/
-
- 
-
                 for (y=0;y<Arreglo.length;y++) {
 
                                //j=0;
