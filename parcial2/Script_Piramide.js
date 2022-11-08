@@ -78,11 +78,9 @@ Arreglo.forEach((rows) => {
 
 const textSum = document.getElementById("sumar");
 
-textSum.innerHTML = "La suma de la ruta mayor es de: " + Sumatot(Arreglo);
+textSum.innerHTML = "La suma de la ruta mayor es de: " + Sumatot(sumar);
 
- 
-
-document.write( "<b>La suma del primer recorrrido es [" + Sumatot(Arreglo) + "]</b><br/>" );
+document.write( "<b>La suma del primer recorrrido es [" + Sumatot(sumar) + "]</b><br/>" );
 
  
 
