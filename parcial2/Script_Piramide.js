@@ -104,7 +104,7 @@ function calcular(Arreglo , i, j ) {
 
                   
                 /*En esta bloque se realiza el primer recorrido y se realiza el calculo*/
-                for (y=0;y<-1;y++) {
+                for (y=0;y<0;y++) {
 
                   contador1 = 0;
 
@@ -126,7 +126,7 @@ function calcular(Arreglo , i, j ) {
 
                   contador1 = contador1 + Arreglo[i][j];      
 
-                  for (j<0;j<Arreglo[i+1].length[j];j++) {
+                  for (j<-1;j<Arreglo.length[j];j++) {
 
 
                    }             
