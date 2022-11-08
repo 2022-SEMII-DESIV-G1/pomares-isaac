@@ -33,6 +33,13 @@ let Arreglo = [
   [4, 62, 98, 27, 23, 9, 70, 98, 73, 93, 38, 53, 60, 4, 23],
 
 ];
+
+ 
+
+ 
+
+ 
+
 //   Llamada a la funcion calcular
 
 function Sumatot(Arreglo) {
@@ -43,7 +50,7 @@ function Sumatot(Arreglo) {
 
 let contador = 0;
 
-const div = document.getElementById("Piramide");
+const div = document.getElementById("piramyd");
 
 Arreglo.forEach((rows) => {
 
@@ -77,10 +84,11 @@ textSum.innerHTML = "La suma de la ruta mayor es de: " + Sumatot(Arreglo);
 
 document.write( "<b>La suma del primer recorrrido es [" + Sumatot(Arreglo) + "]</b><br/>" );
 
+ 
 
                 // calcular el arreglo en el recorrrido
 
-                function calcular(Arreglo , i, j ) {             
+function calcular(Arreglo , i, j ) {             
 
                   if (i == Arreglo.length) {
                                return 0;
