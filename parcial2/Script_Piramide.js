@@ -115,7 +115,7 @@ function calcular(Arreglo , i, j ) {
 
                            
 
-                               j=j++;
+                               j=j+1;
 
                                for (i=0;i<Arreglo.length;i++) {
                        
