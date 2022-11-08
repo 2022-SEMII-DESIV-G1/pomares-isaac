@@ -76,7 +76,7 @@ Arreglo.forEach((rows) => {
 
 });
 
-const textSum = document.getElementById("suma");
+const textSum = document.getElementById("sumar");
 
 textSum.innerHTML = "La suma de la ruta mayor es de: " + Sumatot(Arreglo);
 
@@ -88,17 +88,19 @@ document.write( "<b>La suma del primer recorrrido es [" + Sumatot(Arreglo) + "]<
 
                 // calcular el arreglo en el recorrrido
 
-function calcular(Arreglo , i, j ) {             
-
-                  if (i == Arreglo.length) {
-                               return 0;
-
-                  }
-
-                  if (j == Arreglo.length) {
-                               return 0;
-
-                  }
+             
+  function calcular(Arreglo, i, j) {
+	
+    if (i == Arreglo.length) {
+      return 0;
+    }
+    
+    let sumar;
+    sumar = Arreglo[i][j] + 
+        Math.max(
+            calcular(Arreglo, i + 1, j), 
+            calcular(Arreglo, i + 1, j + 1));
+    return sumar;
 
                   var contador1, x, y, i, j, contador2, contador3;
 
