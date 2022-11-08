@@ -76,13 +76,13 @@ Arreglo.forEach((rows) => {
 
 
 
+
+});
 const textSum = document.getElementById("sumar");
 
 textSum.innerHTML = "La suma de la ruta mayor es de: " + Sumatot(Arreglo);
 
 document.write( "<b>La suma del primer recorrrido es [" + Sumatot(Arreglo) + "]</b><br/>" );
-});
- 
 
                 // calcular el arreglo en el recorrrido
 
