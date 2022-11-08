@@ -126,7 +126,7 @@ function calcular(Arreglo , i, j ) {
 
                   contador1 = contador1 + Arreglo[i][j];      
 
-                  for (j<-1;j<Arreglo[i].length[j];j++) {
+                  for (j<1;j<Arreglo[i].length[j];j++) {
 
 
                    }             
